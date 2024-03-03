@@ -1,0 +1,10 @@
+<div id="nav">
+    <button routerLink="/step1" id="step1">Step 1</button>
+    <button routerLink="/step2" id="step2" [disabled]="!modelSelected">Step 2</button>
+    <button routerLink="/step3" id="step3" [disabled]="!confSelected">Step 3</button>
+  </div>
+  <router-outlet></router-outlet>
+  @if(modelSelected){
+    <app-image></app-image>
+  }
+  
